@@ -1,22 +1,13 @@
 import alibo from "../public/assets/projects/alibo.png";
 import iconScholar from "../public/assets/projects/iconScholar.png";
 import iconScholarweb from "../public/assets/projects/iconScholarweb.png";
-import beitRent from "../public/assets/projects/beitRent.png";
+import mechal from "../public/assets/projects/mechal.png";
 import wezader from "../public/assets/projects/wezader.png";
 
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   const projects = [
-    {
-      name: "Alibo",
-      img1: alibo,
-      liveLink: "alibo",
-      frameworks: ["React", "TailwindCSS", "JSON server", "JSON auth"],
-      tech: "React Js",
-      projectUrl: "alibo",
-    },
-
     {
       name: "Icon Scholar Academy | Admin Panel",
       img1: iconScholar,
@@ -46,6 +37,20 @@ const Projects = () => {
       projectUrl: "iconScholar",
     },
     {
+      name: "Mechal Sport club | Admin Panel",
+      img1: mechal,
+      liveLink: "/",
+      frameworks: [
+        "React",
+        "TailwindCSS",
+        "Material UI",
+        "TypeScript",
+        "React Router",
+      ],
+      tech: "React Js",
+      projectUrl: "mechal",
+    },
+    {
       name: "Wezader | Admin Panel",
       img1: wezader,
       liveLink: "https://beitrent.netlify.app/",
@@ -59,6 +64,14 @@ const Projects = () => {
       ],
       tech: "React Js",
       projectUrl: "wezader",
+    },
+    {
+      name: "Alibo",
+      img1: alibo,
+      liveLink: "alibo",
+      frameworks: ["React", "TailwindCSS", "JSON server", "JSON auth"],
+      tech: "React Js",
+      projectUrl: "alibo",
     },
   ];
 

@@ -33,9 +33,7 @@ const iconScholar = () => {
             schedules, you can study at your own pace, from anywhere in the
             world.
           </p>
-          <Link href="iconScholar" target="_blank" rel="noreferrer">
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </Link>
+
           <a href="https://iconscholar.com/" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4">Demo</button>
           </a>

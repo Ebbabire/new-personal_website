@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import codebookImg from "../public/assets/projects/alibo.png";
+import portfolioImg from "../public/assets/projects/mechal.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const alibo = () => {
+const mechal = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -14,49 +14,59 @@ const alibo = () => {
           layout="fill"
           objectFit="cover"
           objectPosition="top"
-          src={codebookImg}
+          src={portfolioImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Alibo</h2>
-          <h3>React JS / TypeScript / Tailwind CSS / Shadcn UI</h3>
+          <h2 className="py-2">Mechal sport club | Admin Panel</h2>
+          <h3>
+            React / Next / TypeScript / TailwindCSS / ShadCn UI / Firebase
+          </h3>
         </div>
       </div>
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
           <p>Project</p>
-          <h2 className="mb-4">Overview</h2>
+          <h2>Overview</h2>
           <p>
-            An apartment booking platform designed to simplify the process of
-            finding and securing rental properties. This project focuses on
-            creating an intuitive platform where users can easily search for
-            apartments, view detailed property information, compare options, and
-            make secure bookings. The platform integrates features like
-            location-based searches, user reviews, and a secure payment system,
-            offering a reliable and seamless experience for both property owners
-            and renters.
+            An admin panel for mechal sport club designed to efficiently manage
+            and oversee new membership requests and news updates about the sport
+            club. This comprehensive control center provides administrators with
+            a suite of tools to ensure smooth operations and optimal
+            performance. Key features include:{" "}
+            <span className="font-semibold">
+              Membership Requests Management, News Posting, Game schedules, and
+              fan comments.
+            </span>
           </p>
 
-          <Link href="alibo" target="_blank" rel="noreferrer">
+          <a
+            href="https://mechal-admin.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4">Demo</button>
-          </Link>
+          </a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> NextJs
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Tailwind CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> TypeScript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Shadcn UI
+                <RiRadioButtonFill className="pr-1" /> ShadCn UI
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Firebase
@@ -72,4 +82,4 @@ const alibo = () => {
   );
 };
 
-export default alibo;
+export default mechal;
