@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import codebookImg from "../public/assets/projects/codebook-home_page.jpg";
+import icon from "../public/assets/projects/iconScholar.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const codebook = () => {
+const iconScholarAdmin = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,12 +13,13 @@ const codebook = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={codebookImg}
+          objectPosition="top"
+          src={icon}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Codebook App</h2>
-          <h3>React JS / Tailwind / JSON server</h3>
+          <h2 className="py-2">Icon Scholar Academy | Admin Panel</h2>
+          <h3>React/ Next / TypeScript / TailwindCSS / Firebase / ShadCn UI</h3>
         </div>
       </div>
 
@@ -27,21 +28,20 @@ const codebook = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            I built this application in React JS and is hosted on Netlify. This
-            app features user authentication with JSON auth. This application is
-            lets users who want to study web developmet purchase ebooks after
-            they register and log in. The useContext hook is also being
-            implemented for app-wide state management.
+            An admin panel for an e-learning platform designed to streamline the
+            management and operation of the platform. It provides administrators
+            with tools to efficiently oversee and control various aspects of the
+            platform, including:{" "}
+            <span className="font-semibold">
+              Course Management, User Management, Analytics and Reporting, and
+              Settings and Configuration.
+            </span>
           </p>
-          <a
-            href="https://github.com/Ebbabire/codebook"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link href="iconScholarAdmin" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </a>
+          </Link>
           <a
-            href="https://codebook-ebba.netlify.app/"
+            href="https://dashboard.iconscholar.com"
             target="_blank"
             rel="noreferrer"
           >
@@ -56,16 +56,19 @@ const codebook = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Next Js
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> TypeScript
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> JSON server
+                <RiRadioButtonFill className="pr-1" /> TailwindCSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> JSON auth
+                <RiRadioButtonFill className="pr-1" /> Firebase
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> ShadCn UI
               </p>
             </div>
           </div>
@@ -78,4 +81,4 @@ const codebook = () => {
   );
 };
 
-export default codebook;
+export default iconScholarAdmin;

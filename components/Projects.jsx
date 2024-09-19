@@ -1,61 +1,64 @@
-import codebookTab from "../public/assets/projects/codebook-home_tabView.png";
-import codebookHome from "../public/assets/projects/codebook-home_page.jpg";
-import codebookMobile from "../public/assets/projects/codebook-home_mobileView.png";
-import natoursHome from "../public/assets/projects/natours-home_page.png";
-import natoursTab from "../public/assets/projects/natour-home_tab.png";
-import natoursMobile from "../public/assets/projects/natours-home_mobile.png";
-import githubHome from "../public/assets/projects/githubFinder-home.png";
-import githubMobile from "../public/assets/projects/githubFinder-mobile.png";
-import githubTab from "../public/assets/projects/githubFinder-tab.png";
-import portfolioHome from "../public/assets/projects/portfolio-home.png";
-import portfolioMobile from "../public/assets/projects/portfolio-mobile.png";
-import portfolioTab from "../public/assets/projects/portfolio-tab.png";
+import alibo from "../public/assets/projects/alibo.png";
+import iconScholar from "../public/assets/projects/iconScholar.png";
+import iconScholarweb from "../public/assets/projects/iconScholarweb.png";
+import beitRent from "../public/assets/projects/beitRent.png";
+import wezader from "../public/assets/projects/wezader.png";
+
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   const projects = [
     {
-      name: "Codebook",
-      img1: codebookHome,
-      img2: codebookTab,
-      img3: codebookMobile,
-      gitLink: "https://github.com/Ebbabire/codebook",
-      liveLink: "https://codebook-ebba.netlify.app/",
+      name: "Alibo",
+      img1: alibo,
+      liveLink: "alibo",
       frameworks: ["React", "TailwindCSS", "JSON server", "JSON auth"],
       tech: "React Js",
-      projectUrl: "codebook",
-    },
-    {
-      name: "Github Finder",
-      img1: githubHome,
-      img2: githubTab,
-      img3: githubMobile,
-      gitLink: "https://github.com/Ebbabire/github_finder",
-      liveLink: "https://github-finder-ebba.netlify.app/",
-      frameworks: ["React", "TailwindCSS", "GitHub API"],
-      tech: "React Js",
-      projectUrl: "github",
+      projectUrl: "alibo",
     },
 
     {
-      name: "Portfolio Site",
-      img1: portfolioHome,
-      img2: portfolioTab,
-      img3: portfolioMobile,
-      frameworks: ["React", "TailwindCSS"],
+      name: "Icon Scholar Academy | Admin Panel",
+      img1: iconScholar,
+      liveLink: "iconScholarAdmin",
+      frameworks: [
+        "React",
+        "TailwindCSS",
+        "Material UI",
+        "TypeScript",
+        "React Router",
+      ],
       tech: "Next Js",
-      projectUrl: "portfolio",
+      projectUrl: "iconScholarAdmin",
     },
     {
-      name: "Natours",
-      img1: natoursHome,
-      img2: natoursTab,
-      img3: natoursMobile,
-      gitLink: "https://github.com/Ebbabire/Natours",
-      liveLink: "https://natours-ebba.netlify.app/",
-      frameworks: ["Html", "Sass", "CSS"],
-      tech: "SASS",
-      projectUrl: "natours",
+      name: "Icon Scholar Academy",
+      img1: iconScholarweb,
+      liveLink: "https://iconscholar.com/",
+      frameworks: [
+        "React",
+        "TailwindCSS",
+        "Material UI",
+        "TypeScript",
+        "React Router",
+      ],
+      tech: "Next Js",
+      projectUrl: "iconScholar",
+    },
+    {
+      name: "Wezader | Admin Panel",
+      img1: wezader,
+      liveLink: "https://beitrent.netlify.app/",
+      liveLink: "https://wezader-admin.netlify.app/",
+      frameworks: [
+        "React",
+        "TailwindCSS",
+        "Material UI",
+        "TypeScript",
+        "React Router",
+      ],
+      tech: "React Js",
+      projectUrl: "wezader",
     },
   ];
 
@@ -68,32 +71,8 @@ const Projects = () => {
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <ProjectItem key={project.title} project={project} />
+            <ProjectItem key={project.name} project={project} />
           ))}
-          {/* <ProjectItem
-            title="Property Finder"
-            backgroundImg={propertyImg}
-            projectUrl="/property"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Crypto App"
-            backgroundImg={cryptoImg}
-            projectUrl="/crypto"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Netflix App"
-            backgroundImg={netflixImg}
-            projectUrl="/netflix"
-            tech="React JS"
-          />
-          <ProjectItem
-            title="Twitch UI"
-            backgroundImg={twitchImg}
-            projectUrl="/twitch"
-            tech="Next JS"
-          /> */}
         </div>
       </div>
     </div>

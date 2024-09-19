@@ -1,8 +1,8 @@
-import Image from "next/image";
 import React from "react";
 import Html from "../public/assets/skills/html.png";
 import Css from "../public/assets/skills/css.png";
 import Javascript from "../public/assets/skills/javascript.png";
+import TypeScript from "../public/assets/skills/typescript-seeklogo.svg";
 import ReactImg from "../public/assets/skills/react.png";
 import Tailwind from "../public/assets/skills/tailwind.png";
 import Github from "../public/assets/skills/github1.png";
@@ -10,9 +10,11 @@ import Firebase from "../public/assets/skills/firebase.png";
 import NextJS from "../public/assets/skills/nextjs.png";
 import Sass from "../public/assets/skills/sass-1.svg";
 import Git from "../public/assets/skills/git-icon.svg";
-import Redux from "../public/assets/skills/redux.svg";
+// import Redux from "../public/assets/skills/redux.svg";
 import Material from "../public/assets/skills/material-ui.svg";
 import Vite from "../public/assets/skills/vitejs.svg";
+import shadcn from "../public/assets/skills/shadcn-ui-seeklogo.svg";
+
 import SkillItem from "./SkillItem";
 
 const Skills = () => {
@@ -20,15 +22,17 @@ const Skills = () => {
     { name: "Html", img: Html },
     { name: "CSS", img: Css },
     { name: "JavaScript", img: Javascript },
+    { name: "TypeScript", img: TypeScript },
     { name: "React", img: ReactImg },
     { name: "NextJs", img: NextJS },
     { name: "SASS", img: Sass },
-    { name: "Tailwind", img: Tailwind },
-    { name: "Redux", img: Redux },
+    { name: "Tailwind CSS", img: Tailwind },
+    // { name: "Redux", img: Redux },
     { name: "Github", img: Github },
     { name: "Git", img: Git },
     { name: "Firebase", img: Firebase },
     { name: "Material UI", img: Material },
+    { name: "Shadcn UI", img: shadcn },
     { name: "ViteJs", img: Vite },
   ];
   return (

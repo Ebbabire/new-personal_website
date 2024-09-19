@@ -88,11 +88,11 @@ const Navbar = () => {
                 Projects
               </li>
             </Link>
-            <Link href="/resume">
+            {/* <Link href="/resume">
               <li className=" text-sm uppercase rounded-lg hover:shadow-lg px-5 py-2">
                 Resume
               </li>
-            </Link>
+            </Link> */}
             <Link href="/#contact">
               <li className=" text-sm uppercase rounded-lg hover:shadow-lg px-5 py-2">
                 Contact

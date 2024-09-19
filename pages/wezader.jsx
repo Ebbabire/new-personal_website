@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import portfolioImg from "../public/assets/projects/portfolio-home.png";
+import portfolioImg from "../public/assets/projects/wezader.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const portfolio = () => {
+const wezader = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -13,12 +13,13 @@ const portfolio = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
+          objectPosition="top"
           src={portfolioImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Portfolio site</h2>
-          <h3>Next Js / React JS / Tailwind </h3>
+          <h2 className="py-2">Wezader | Admin Panel</h2>
+          <h3>React / Next / Javascript / TailwindCSS / Firebase</h3>
         </div>
       </div>
 
@@ -27,20 +28,21 @@ const portfolio = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            This app was built using Next JS and React JS and is hosted on
-            Netlify. Users are able to see my work and experiance and contact me
-            if they want to work with me. You will be able to view the projects
-            I worked on in detail as well as a demo of the website and the code.
+            An admin panel for the product delivery designed to efficiently
+            manage and oversee the entire delivery process. This comprehensive
+            control center provides administrators with a suite of tools to
+            ensure smooth operations and optimal performance. Key features
+            include:{" "}
+            <span className="font-semibold">
+              Order Management, Delivery Tracking, Driver Management, Inventory
+              Management, and Analytics and Reporting.
+            </span>
           </p>
-          <a
-            href="https://github.com/fireclint/property-finder"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link href="wezader" target="_blank" rel="noreferrer">
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
-          </a>
+          </Link>
           <a
-            href="https://property-finder-development.web.app/"
+            href="https://wezader-admin.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -58,10 +60,13 @@ const portfolio = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Tailwind CSS
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Firebase
               </p>
             </div>
           </div>
@@ -74,4 +79,4 @@ const portfolio = () => {
   );
 };
 
-export default portfolio;
+export default wezader;
