@@ -9,12 +9,12 @@ const resume = () => {
         <title>Ebba | Resume</title>
         <meta
           name="description"
-          content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
+          content="I’m a lead web developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
         <link rel="icon" href="/fav.png" />
       </Head>
 
-      <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
+      <div className="max-w-[940px] mx-auto px-4 py-2 pt-[120px]">
         <h2 className="text-center mb-12">Resume</h2>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
           <h2 className="text-center">Ebba Birhanu</h2>
@@ -57,33 +57,89 @@ const resume = () => {
           </div>
         </div>
         <p className="mb-8">
-          Analytical, innovative, and motivated web development professional
-          with experience in team leadership, and organizational effectiveness
-          in fast-paced and challenging environments. Adept at developing
-          strategies and driving streamlined operations. Diverse analytical
-          skills, team collaboration, and relationship building. Consummate
-          professional, and motivated leader, with solid interpersonal abilities
-          and complex problem-solving skills. Effective and proven track record
-          of critical thinking, idea generation, and optimizing efficiencies.
+          <span className="block mb-2">
+            I build frontend systems that don’t break under pressure, clean,
+            fast, and built to scale.
+          </span>
+          <span className="block mb-2">
+            {" "}
+            I specialize in React, Next.js, TypeScript, and Tailwind CSS. I’ve
+            led frontend projects where performance mattered, the user
+            experience had to be smooth, and deadlines were tight. I know how to
+            build things that not only look great but stay maintainable over
+            time.
+          </span>
+          <span className="block mb-2">
+            {" "}
+            My approach is straightforward: clear communication, reliable
+            delivery, and clean code. I write components that are easy to work
+            with, optimize for both user and developer experience (DX), and
+            focus on performance from day one.
+          </span>{" "}
+          <span className="block mb-2">
+            {" "}
+            I’ve worked on corporate websites, admin dashboards, and product UIs
+            — from scratch builds to complex refactors. I’ve also collaborated
+            directly with backend teams, handled API integrations, and optimized
+            apps using SSR, lazy loading, and code splitting.
+          </span>{" "}
+          <span className="block mb-2">
+            My background in mechanical engineering gives me a systems mindset —
+            I think about how everything fits together, not just individual
+            features.
+          </span>{" "}
+          <span className="block mb-2">
+            If you’re looking for a frontend developer who can work
+            independently, communicate clearly, and ship production-ready
+            results — let’s talk.
+          </span>
         </p>
 
         {/* Skills */}
-        <div className="text-center py-4 mb-12">
+        <div className="text-center py-4 mb-12 ">
           <h5 className="text-center underline text-[18px] py-2">Skills</h5>
-          <p className="py-2">
-            <span className="font-bold">Technical Skills</span>
-            <span className="px-2">|</span>Front-End Web Developer
-            <span className="px-2">|</span> HTML
-            <span className="px-2">|</span>CSS
-            <span className="px-2">|</span>Javascript
-            <span className="px-2">|</span>React
-            <span className="px-2">|</span>Next JS
-            <span className="px-2">|</span>SASS
-            <span className="px-2">|</span>Tilwind CSS
-            <span className="px-2">|</span>Redux
-            <span className="px-2">|</span>Git
-            <span className="px-2">|</span> Firebase
-            <span className="px-2">|</span> ViteJs
+          <p className="py-2 flex items-center justify-center mx-auto gap-y-4 flex-wrap ">
+            {/* <span className="font-bold">Technical Skills</span> */}
+            {/* <span className="px-2"></span>Front-End Web Developer */}
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              HTML
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              CSS
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              JavaScript
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              TypeScript
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              React
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              Next.JS
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              Tilwind CSS
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              Shadcn UI
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              Redux
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              Git
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              SASS
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              Firebase
+            </span>
+            <span className="px-2 flex items-center border-l-2 border-black w-fit">
+              ViteJs
+            </span>
           </p>
         </div>
 
@@ -93,39 +149,35 @@ const resume = () => {
         {/* Experience */}
         <div className="py-6">
           <p className="italic">
-            <span className="font-bold italic">YOT TECH</span>
+            <span className="font-bold italic">Qemer Software Technology</span>
             <span className="px-2">|</span>Addis Ababa, ET
           </p>
-          <p className="py-1 italic">Front End Web Developer</p>
+          <p className="py-1 italic">Lead Web Developer</p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Developed my Knowledge of JavaScript frameworks and libraries like
-              React and Next to create rich interactive content.
+              Built a modular frontend setup using React, Next.js, and
+              TypeScript that cut our page load time by about 30% and helped
+              keep users around longer.
             </li>
             <li>
-              Ensured comprehensive mobile responsive UI layouts with
-              understanding of HTML, CSS, and JavaScript.
+              Set up standards for how we write and organize our frontend code,
+              which helped reduce bugs and made the code easier to maintain.
             </li>
             <li>
-              Mentored interns, managed project milestones, and collaborated
-              with seniors to overcome challenges.
+              Worked on performance improvements like lazy loading and
+              optimizing server-side rendering to keep the UI smooth and quick.
             </li>
             <li>
-              Debugged web applications using React Developer Tools and Chrome
-              Developer Console, improving work quality and ensuring optimal
-              performance and user satisfaction.
+              Organized and prioritized work across the team to keep projects
+              moving and meet deadlines.
             </li>
             <li>
-              Engaged in weekly Tech team meetings to strategize and enhance
-              work efficiency for ongoing and upcoming projects.
+              Mentored several developers, helping them write better code and
+              improve testing practices.
             </li>
             <li>
-              Shadowed senior developers on large projects and learned how to
-              use tool like SASS for CSS development.
-            </li>
-            <li>
-              Helped the team by testing code across multiple browsers to ensure
-              it worked well and provided the best user experience.
+              Regularly meet with clients and stakeholders to gather feedback
+              and adjust plans so we build the right features.
             </li>
           </ul>
         </div>
